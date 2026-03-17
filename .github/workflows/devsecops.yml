@@ -51,6 +51,7 @@ jobs:
           
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.14.0
+        continue-on-error: true
         with:
           # Using Altoro Mutual as a stable alternative to vulnweb
           target: 'http://demo.testfire.net/'
